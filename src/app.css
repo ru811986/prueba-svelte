@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+:root {
+    /* Colores de marca */
+    --color-blue: #3b82f6; /* Un azul brillante */
+}
+
+.blue {
+    background-color: var(--color-blue);
+}
