@@ -1,4 +1,6 @@
 <script>
+  import { Link } from "svelte-routing";
+
   let showMenu = false;
 
   function toggleNavbar() {
@@ -46,10 +48,10 @@
         ? 'flex'
         : 'hidden'}"
     >
-      <a class="text-white hover:text-black" href="/home">Home</a>
-      <a class="text-white hover:text-black" href="/blog">Blogs</a>
-      <a class="text-white hover:text-black" href="/contact">Contact US</a>
-      <a class="text-white hover:text-black" href="/about">About Us</a>
+      <Link to="/home" class="text-white hover:text-black">Home</Link>
+      <Link to="/blog" class="text-white hover:text-black">Blogs</Link>
+      <Link to="/contact" class="text-white hover:text-black">Contact US</Link>
+      <Link to="/about" class="text-white hover:text-black">About Us</Link>
     </div>
   </nav>
 </div>
